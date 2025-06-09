@@ -18,6 +18,18 @@ p {
 button {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input,
+select {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: 3px solid #43abf0;
 }
 
 ul {
@@ -28,6 +40,11 @@ ul {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+a:hover {
+  color: #43abf0;
+  transition: all 0.5s ease;
 }
 
 li {
@@ -142,6 +159,13 @@ body {
   color: #fff;
   border: 1px solid #fff;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.primary-btn:hover {
+  background-color: #fff;
+  color: #3e9cdc;
+  transition: all 0.5s ease;
 }
 
 .secondary-btn {
@@ -149,6 +173,12 @@ body {
   background: #fff;
   border: #6f6d7b;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.secondary-btn:hover {
+  color: #fff;
+  background: #3e9cdc;
 }
 
 .order-bg {
@@ -222,6 +252,74 @@ body {
   line-height: 24px;
   color: #272733;
   font-size: 18px;
+  border-radius: 3px;
+}
+
+select {
+  background: #fff;
+  color: #272733;
+  font-size: 18px;
+  padding: 10px 30px 10px 12px;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+
+select:focus {
+  background: #fff;
+  border: none;
+}
+
+select:hover {
+  background: #3d4050;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+select option[disabled] {
+  display: none;
+}
+
+select,
+::picker(select) {
+  -webkit-appearance: base-select;
+     -moz-appearance: base-select;
+          appearance: base-select;
+  cursor: pointer;
+}
+
+::picker(select) {
+  border: 1px solid #3d4050;
+  border-radius: 3px;
+}
+
+select::picker-icon {
+  color: rgba(16, 16, 29, 0.8980392157);
+  transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+  color: #fff;
+}
+
+select:open {
+  background: #3d4050;
+  color: #fff;
+}
+
+option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  background: rgba(16, 16, 29, 0.8980392157);
+  padding: 10px;
+  transition: 0.4s;
+}
+
+option:hover,
+option:focus {
+  color: #43abf0;
 }
 
 .form__range {
@@ -282,6 +380,7 @@ input::placeholder {
   display: flex;
   gap: 10px;
   align-items: center;
+  cursor: pointer;
 }
 
 .line {

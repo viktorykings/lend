@@ -16,10 +16,10 @@
         <div class="header__items">
           <div class="logo">LoremIpsum.<span class="active">Net</span></div>
           <div class="menu">
-            <li class="menu__item active">Бизнес</li>
-            <li class="menu__item">О нас</li>
-            <li class="menu__item">Цены</li>
-            <li class="menu__item">Оформить заказ</li>
+            <li class="menu__item active"><a href="">Бизнес</a></li>
+            <li class="menu__item"><a href="">О нас</a></li>
+            <li class="menu__item"><a href="">Цены</a></li>
+            <li class="menu__item"><a href="">Оформить заказ</a></li>
           </div>
         </div>
       </div>
@@ -84,7 +84,17 @@
                     </div>
                 </div>
                 <form class="form" action="">
-                    <select class="form__input" name="select" id="formSelect">Выберите тип системы</select>
+                  <select class="form__input select" name="select" id="formSelect">
+                    <button>
+                      <selectedcontent></selectedcontent>
+                    </button>
+                      <option class="option" value="" selected disabled hidden>Выберите тип системы</option>
+                      <option class="option" value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                      <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                      <option value="Et harum quidem">Et harum quidem</option>
+                      <option value="Temporibus autem">Temporibus autem</option>
+                      <option value="Itaque earum rerum">Itaque earum rerum</option>
+                     </select>
                     <input class="form__input" type="email" name="email" placeholder="Ваш e-mail"/>
                     <input class="form__input" type="text" name="name" placeholder="Ваше имя" />
                     <label class="form__range">
